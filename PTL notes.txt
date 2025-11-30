@@ -1,0 +1,55 @@
+
+java snippet 1
+20 , length extention    ....(HMAC is not use, appln using only sha256 .. which let attacker to crack it and generate new hash with modify value.. since no integrity check due to hmac not in  use...) anyone can modify
+
+java snippet 3
+18, xml
+
+java 4
+11, insecure deserialization   - User user = (User) iin.readObject -- user trust any inputs without validating 
+
+5
+14, cryptographic flaw
+
+7
+14
+filter bypass 
+
+08
+16, directory traversal 
+
+10
+12, filter bypass 
+
+11
+12, dots not encoded       ......correct way (^https:\/\/secure\.pentesterlab\.com\/) but regex is not proper for validation
+
+12 
+13, Validation not applied to only the Hostname
+
+Note: Regular expression (regex)    (note: \ is to escape - \. and without \ in dot means. -> secure.net = dot anything secureAnet
+. does NOT mean dot
+. means any character
+example : secure.pentesterlab.com   -> actually matches: secureXpentesterlabYcom
+correct way: ^https:\/\/secure\.pentesterlab\.com\/  -> ^https:\/\/secure\.pentesterlab\.com(?=\/|$) - for subdomain 
+
+Javascript Snippet 02 
+9, sql injection
+
+03
+8, directory traversal
+
+05
+7, log injection 
+
+06
+9, SSTI 
+
+TypeScript Snippet 01 
+13, directory traversal -> filename -> /./../../../etc/passwd as filename while uploading
+
+02 
+12, CORS bypass   --- (response.setHeader("Access-Control-Allow-Origin", origin); 
+
+
+
