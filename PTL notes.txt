@@ -52,4 +52,50 @@ TypeScript Snippet 01
 12, CORS bypass   --- (response.setHeader("Access-Control-Allow-Origin", origin); 
 
 
+04
+15, broken auth                  ....( it didnot stop the execution)
+
+06
+21,  Padding oracle                          ....   ( const decipher = crypto.createDecipheriv('aes-256-cbc', key, Buffer.from(iv));)
+
+#07
+43, Race Condition ......
+
+#08
+12, Regular Expression DOS 
+
+Golang #2
+16, Missing Field Delimiter
+
+04
+16, Broken authentication  .........(|| is used - accept either valid username or passwd)
+
+05
+6, Broken Authentication
+
+06
+25, Signing Oracle   
+
+7
+7, Directory Traversal 
+
+09
+21, Non Constant in time comparison
+
+10
+14, Directory traversal
+
+11
+9, Directory traversal      ....bypass ///////etc.passwd
+
+php snippet #1
+2, Directory Traversal 
+
+03
+7, Filter Bypass   -- if (in_array($header['alg'], $algorithms))  
+
+
+
+
+
 
